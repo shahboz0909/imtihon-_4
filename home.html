@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+<body >
+  <!-- ====HEADER==== -->
+    <header>
+      <div class="container ">
+        <div class="header__wrapper d-flex align-items-center justify-content-between mt-3 mb-2">
+
+          <a href="#"><img class="site-logo" src="./img/site-logo.svg" alt="site-logo" width="226" height="44"></a>
+
+          <form class="header__form position-relative d-flex align-items-center">
+            <img class="header__search-img position-absolute " src="./img/loop.svg" alt="loop" width="19" height="19">
+            <input class="header__input ps-5 border-0 rounded-pill" type="text" placeholder="Search books">
+          </form>
+
+            <div class="login-section d-flex align-items-center justify-content-between">
+              <img src="./img/sun.svg" alt="sun">
+              <button class="login-section__btn border-0 bg-primary rounded-2">Logout</button>
+            </div>
+
+        </div>
+      </div>
+    </header>
+  <!-- ====HEADER==== -->
+
+  <main>
+
+
+
+    <!-- ===============SECTION-showing=============== -->
+    <section class="showing-section">
+      <div class="container">
+        <div class="showing__wrapper">
+          <div class="showing__inner d-flex align-items-center justify-content-between ms-auto">
+            <p class="showing__text m-0 p-0 fw-bold">Showing <span class="showing__span fw-bold">18</span> Result(s)</p>
+            <button class="showing__btn  border-0 rounded-2 text-white d-flex align-items-center justify-content-evenly">
+              <img class="calendar-img " src="./img/calendar.svg" alt="calendar" width="24" height="24">
+              Order by newest</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ===============SECTION-showing=============== -->
+    <!-- ================SECTION-MAIN================= -->
+    <section>
+      <div class="container">
+        <div class="main__wrapper d-flex ">
+          <div class="wrapper__bookmarks-result">
+            <div class="bookmarks-head">
+              <p class="title-bookmark fw-bold">Bookmarks</p>
+              <p class="text-bookmark">If you don’t like to read, you haven’t found the right book</p>
+            </div>
+            <ul class="result-bookmark list-unstyled"></ul>
+          </div>
+          <div class="wrapper__books-list">
+            <ul class="books-list list-unstyled d-flex flex-wrap justify-content-evenly pt-3">
+          
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================SECTION-MAIN================= -->
+
+<div class="modal-wrapper hidden">
+
+</div>
+
+
+
+<div class="pagenation-wrapper">
+  <button class="prev-button border-0 btn-primary">prev</button>
+  <button class="next-button ">next</button>
+</div>
+
+
+    <template id="template">
+      <li class="books-item mb-5">
+        <div class="img-wrapper mb-4">
+          <img  class="books-img" src="./img/test-img.svg" alt="python img" width="200" height="200">
+        </div>
+        <div class="titles-wrapper">
+          <p class="book-title m-0 p-0 ">Python</p>
+          <p class="book-author m-0 p-0">David M. Beazley</p>
+          <p class="book-year m-0 p-0">2009</p>
+        </div>
+        <div class="btns-wrapper d-flex justify-content-between mt-2">
+          <button class="el-bookmark border-0 fw-bold">Bookmark</button>
+          <button class="el-modal border-0 fw-bold" >More Info</button>
+        </div>
+        <a href="" target="_blank" class="el-read d-inline-block text-center pe-auto text-white mt-2">Read</a>
+      </li>
+    </template>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+</html>

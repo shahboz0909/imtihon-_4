@@ -1,0 +1,390 @@
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+  url('../fonts/montserrat-v24-latin-300.woff2') format('woff2'),
+  url('../fonts/montserrat-v24-latin-300.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../fonts/montserrat-v24-latin-regular.woff2') format('woff2'), 
+  url('../fonts/montserrat-v24-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+  url('../fonts/montserrat-v24-latin-500.woff2') format('woff2'), 
+  url('../fonts/montserrat-v24-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('../fonts/montserrat-v24-latin-600.woff2') format('woff2'),
+  url('../fonts/montserrat-v24-latin-600.woff') format('woff'); 
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #80a3d7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9e9e9e;
+}
+
+.home-login {
+  background-image: url(../img/Login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+}
+
+body {
+  overflow: hidden;
+}
+
+.login-page{
+  padding-top: 180px;
+}
+
+.js-login-input {
+  max-width: 250px;
+  border: none;
+  padding: 7px;
+  background-color: transparent;
+  border-color: rgb(rgba(245, 244, 244, 0.968));
+  color: rgb(240, 255, 255);
+}
+
+.js-password-input {
+  max-width: 250px;
+  border: none;
+  padding: 7px;
+  background-color: transparent;
+  border-color: rgb(rgba(245, 244, 244, 0.968));
+  color: rgb(240, 255, 255);
+}
+
+.js-password-input:focus {
+  outline: none;
+}
+
+.js-login-input:focus {
+  outline: none;
+}
+
+.user{
+  padding: 4px;
+  position: absolute;
+  border: solid 2px rgb(240, 255, 255);
+  border-radius: 5px;
+}
+
+.user-password {
+  margin-top: 100px;
+  padding: 4px;
+  position: absolute;
+  border: solid 2px rgb(240, 255, 255);
+  border-radius: 5px;
+}
+
+.user-img {
+  position: relative;
+}
+
+.user-img-password{
+  position: relative;
+  left: 5px;
+}
+
+.login-btn {
+  width: 250px;
+  padding: 7px;
+}
+
+.login-btn:active {
+  opacity: 0.8;
+}
+
+.login-btn:hover {
+background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-logo {
+  width: 226px;
+  height: 44px;
+}
+
+
+.header__input {
+  width: 670px;
+  height: 48px;
+  background-color: #F8FAFD;
+  outline: none;
+  
+}
+
+.header__search-img {
+  width: 19px;
+  height: 19px;
+left:  15px;
+} 
+
+.header__input::placeholder {
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+color:  rgba(0, 0, 0, 0.24);
+line-height: 15px;
+}
+
+.login-section {
+  width: 137px;
+}
+
+.login-section__btn  {
+  width: 100px;
+  height: 40px;
+  color: white; 
+  transition: all 0.4s ease ;
+}
+
+.login-section__btn:hover {
+  color: #0D75FF;
+  background-color: white !important;
+  border: 2px solid #0D75FF !important;
+
+}
+
+.showing__inner {
+  max-width: 912px; 
+}
+
+.showing__btn {
+  width: 165px;
+  height: 34px;
+  background-color: #A6B0C3;
+
+  
+}
+
+.calendar-img {
+  width: 24px;
+  height: 24px;
+}
+
+.showing-section {
+  height: 56px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+}
+
+.wrapper__bookmarks-result {
+  padding: 25px;
+  width: 268px;
+  border-right: 2px solid #E3E6EB;
+}
+
+.title-bookmark {
+  width: 125px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text-bookmark {
+  width: 200px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+}
+
+.wrapper__books-list {
+  background-color: #F8FAFD;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.book-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.titles-wrapper {
+  height: 130px;
+  overflow-y: auto;
+}
+
+
+.books-item {
+  width: 282px;
+  padding: 18px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+.img-wrapper {
+  width: 250px;
+  height: 240px;
+  padding: 25px;
+  background-color: #F8FAFD;
+}
+.books-img{
+  width: 200px ;
+  height: 200px ;
+}
+
+.el-bookmark {
+  background: #FFD80D;
+  color: #000000;
+  width: 120px;
+  height: 37px;
+  background: #FFD80D;
+  border-radius: 4px;
+  
+}
+.el-modal {
+  width: 120px;
+  height: 37px;
+  background: rgba(13, 117, 255, 0.05);
+  color: #0D75FF;
+  border-radius: 4px;
+}
+
+.el-read {
+  text-decoration: none;
+  width: 246px;
+  height: 37px;
+  background: #75828A;
+  border-radius: 4px;
+}
+
+.result-bookmark {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.bookmark-text {
+  max-width: 100px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal__book-title {
+  width: 400px;
+}
+
+.bookmark-list__item {
+  margin: 0;
+  padding: 0;
+  background: #F8FAFD;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+}
+
+.bookmark-read-img {
+  width: 24px;
+  height: 24px;
+}
+
+.bookmark-delete-img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.modal__link {
+  text-decoration: none;
+}
+
+.modal__link {
+  display: block;
+  width: 112px;
+  height: 35px;
+  width: 112px;
+  height: 35px;
+  background: #75828A;
+  border-radius: 4px;
+  color: white;
+}
+
+.modal__text {
+  height: 160px;
+  overflow-y: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.modal-wrapper {
+  width: 550px;
+  /* height: 1500px; */
+  padding-bottom: 20px;
+  padding-left: 33px;
+  padding-right: 33px;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  background: #F8FAFD;
+  margin-bottom: 44px;
+  z-index: 10;
+  background: rgb(199, 171, 171);
+}
+
+.pagenation-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 840px;
+  display: block;
+}
+
+
+
+.hidden {
+  display: none;
+}
